@@ -30,4 +30,19 @@ fun longestPalindrome(s: String): String {
     }
     return s.substring(left, left + maxDiv + 1)
 }
+
+val a = fun(): () -> Unit {
+    var a = 0
+    return fun() {
+        println(a)
+        a++
+    }
+}
+
+fun main() {
+    val aa = a()
+    for (i in 0..2) {
+        aa()
+    }
+}
 //中心扩展法

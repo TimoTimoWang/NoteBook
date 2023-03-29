@@ -3,10 +3,7 @@ package kotlins
 import java.util.*
 import kotlin.collections.ArrayList
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
+class TreeNode(var `val`: Int,var left: TreeNode? = null, var right: TreeNode? = null)
 
 /*
 * 思路： 建立两个队列，q1，q2  遍历q1层元素时，q1层元素的子节点入队q2层，下次遍历q2层，q2的子元素入队q1层   q1 q2 同时是空终止遍历
