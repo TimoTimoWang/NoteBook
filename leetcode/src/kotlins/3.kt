@@ -1,5 +1,7 @@
 package kotlins
 
+import sun.nio.cs.Surrogate
+
 fun lengthOfLongestSubstring(s: String): Int {
     var winLeft = 0
     var winRight = 0
@@ -13,5 +15,6 @@ fun lengthOfLongestSubstring(s: String): Int {
             set.remove(s[winLeft++])
         }
     }
+    generateSequence(a)
     return maxSize
 }

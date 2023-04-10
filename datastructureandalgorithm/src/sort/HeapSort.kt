@@ -10,7 +10,7 @@ abstract class Heap<T>(val nums: Array<T>) {
     }
 
     fun shuffle(fromIndex: Int) {
-        if(fromIndex == maxIndex) return
+        if (fromIndex == maxIndex) return
         var index = fromIndex
         while (index <= (maxIndex - 1) / 2) {
             val maxChildIndex =
